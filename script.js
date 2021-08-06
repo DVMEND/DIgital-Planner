@@ -8,22 +8,29 @@ $("document").ready(function(){
     for (var i=9; i<18; i++){
         workHoursVal.push(moment().hour(i).format("hA"));
     }
+    console.log(workHoursVal);
 
     for (var i=0; i < workHoursVal.length; i++){
-        $(".container").append("<span class= 'row hour time-block'>",workHoursVal[i], "</span> </br>");
+        $("#col1").append("<span class= 'hour row time'>"+ workHoursVal[i]+ "</span></br>");
     
     };
+
+    for (var i=0; i < workHoursVal.length; i++){
+        $("#col2").append("<input class= 'row block input'></br>");
+    
+    };
+
     var currentTime = moment()
     var currentTime = moment().format("h:mm:ss")
     for (var i=0; i<workHoursVal.length; i++)
         if (workHoursVal[i]< currentTime) {
-            $(".hour").addClass("past");
+            $(".block").addClass("past");
         }
         else if (workHoursVal[i]>currentTime){
-            $(".hour").addClass("future");
+            $(".block").addClass("future");
         }
         else 
-            $(".hour").addClass("present");
+            $(".block").addClass("present");
     console.log(currentTime);
 })
 
