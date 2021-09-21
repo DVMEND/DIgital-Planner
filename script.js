@@ -44,15 +44,15 @@ $("document").ready(function(){
     
     };
     
-    var nineAm="";
+    var nineAm=$("#nine").val();
     var tenAm=$("#ten").val();
     var elevenAm=$("#eleven").val();
     var twelvePm=$("#twelve").val();
     var onePm=$("#one").val();
     var twoPm=$("#two").val();
-    var three=$("#three").val();
-    var four=$("#four").val();
-    var five=$("#five").val();
+    var threePm=$("#three").val();
+    var fourPm=$("#four").val();
+    var fivePm=$("#five").val();
 
 
     $("#btn1").click(function(){
@@ -72,33 +72,33 @@ $("document").ready(function(){
     });
 
     $("#btn4").click(function(){
-        twelveAm= $("#twelve").val();
-        localStorage.setItem("twelve", JSON.stringify(twelveAm));
+        twelvePm= $("#twelve").val();
+        localStorage.setItem("twelve", JSON.stringify(twelvePm));
     });
 
     $("#btn5").click(function(){
-        oneAm= $("#one").val();
-        localStorage.setItem("one", JSON.stringify(oneAm));
+        onePm= $("#one").val();
+        localStorage.setItem("one", JSON.stringify(onePm));
     });
 
     $("#btn6").click(function(){
-        twoAm= $("#two").val();
-        localStorage.setItem("two", JSON.stringify(twoAm));
+        twoPm= $("#two").val();
+        localStorage.setItem("two", JSON.stringify(twoPm));
     });
 
     $("#btn7").click(function(){
-        threeAm= $("#three").val();
-        localStorage.setItem("three", JSON.stringify(threeAm));
+        threePm= $("#three").val();
+        localStorage.setItem("three", JSON.stringify(threePm));
     });
 
     $("#btn8").click(function(){
-        fourAm= $("#four").val();
-        localStorage.setItem("four", JSON.stringify(fourAm));
+        fourPm= $("#four").val();
+        localStorage.setItem("four", JSON.stringify(fourPm));
     });
 
     $("#btn9").click(function(){
-        fiveAm= $("#five").val();
-        localStorage.setItem("five", JSON.stringify(fiveAm));
+        fivePm= $("#five").val();
+        localStorage.setItem("five", JSON.stringify(fivePm));
     });
 
     var savedNine= JSON.parse(localStorage.getItem('nine'));
