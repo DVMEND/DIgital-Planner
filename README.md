@@ -4,7 +4,7 @@ Work Day Scheduler is a website that lets you plan out your working hours and sa
 
 ## Screenshot
 
-[Work-Day-Schedule-Screenshot](Assets/Work-Day-Schedule-Screenshot.png)
+![Work-Day-Schedule-Screenshot](Assets/Work-Day-Schedule-Screenshot.png)
 
 ## Installation
 
